@@ -1,5 +1,5 @@
 
-# Análise de Tênis - arrumar readme
+# Análise de Tênis 
 ![Screenshot](input_videos/teste.png)
 
 ## Introdução
