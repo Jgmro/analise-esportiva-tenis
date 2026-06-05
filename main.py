@@ -11,6 +11,9 @@ from mini_court import MiniCourt
 import cv2
 import pandas as pd
 from copy import deepcopy
+import os
+import joblib
+
 
 def main():
 
@@ -137,6 +140,20 @@ def main():
     player_stats_data_df['player_1_average_player_speed'] = player_stats_data_df['player_1_total_player_speed']/player_stats_data_df['player_2_number_of_shots']
     player_stats_data_df['player_2_average_player_speed'] = player_stats_data_df['player_2_total_player_speed']/player_stats_data_df['player_1_number_of_shots']
 
+    # ── Salvar CSV para treino futuro do modelo ──
+    os.makedirs("training_data", exist_ok=True)
+    player_stats_data_df.to_csv("training_data/stats.csv", index=False)
+    print("Stats saved to training_data/stats.csv")
+ 
+    # ── Carregar modelo preditivo (se existir) ──
+    predictor = None
+    predictor_path = "models/predictor.pkl"
+    if os.path.exists(predictor_path):
+        predictor = joblib.load(predictor_path)
+        print("Predictive model loaded!")
+    else:
+        print("No predictive model found. Run train_predictor.py to train one.")
+        print("Continuing without win probability overlay...")
 
 
     # output

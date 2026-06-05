@@ -24,3 +24,7 @@ Projeto voltado à análise esportiva preditiva aplicada ao tênis, utilizando v
 * pandas
 * numpy 
 * opencv
+* json
+* os
+* webbrowser
+* base64
