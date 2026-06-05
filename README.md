@@ -1,5 +1,6 @@
 
-# Análise de Tênis
+# Análise de Tênis - arrumar readme
+
 
 ## Introdução
 Projeto voltado à análise esportiva preditiva aplicada ao tênis, utilizando visão computacional e aprendizado de máquina para extrair métricas de desempenho em partidas. A solução analisa vídeos para medir velocidade dos jogadores, velocidade dos golpes, quantidade de trocas de bola e índice de erros. O sistema utiliza o algoritmo YOLO para detecção de jogadores e bola, além de redes neurais convolucionais (CNNs) para identificação de pontos-chave da quadra. O projeto integra técnicas de detecção, rastreamento e análise esportiva, com foco em aplicações de analytics e IA no esporte.
