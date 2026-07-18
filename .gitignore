@@ -1,0 +1,6 @@
+*.pt
+input_videos/
+output_videos/
+runs/
+__pycache__/
+*.pyc
