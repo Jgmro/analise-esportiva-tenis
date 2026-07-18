@@ -38,7 +38,7 @@ python main.py
 python generate_odds_panel.py
 ```
 
-##Requirements
+## Requirements
 - Python 3.8+
 - ultralytics
 - pytorch
